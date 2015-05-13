@@ -38,9 +38,9 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="/">
-                <img src="images/eec-logo.png" height="40">
+                <img src="images/eec-logo.png" height="30">
                 +
-                <img src="http://www.kci.com/company/partnerships/CW%20Logo%202011-blue.png" height="30">
+                <img id="cityworks-logo" src="http://www.kci.com/company/partnerships/CW%20Logo%202011-blue.png" height="30">
               </a><!--TODO: Fix logo files-->
             </div>
             <div id="navbar" class="navbar-collapse collapse"><!--TODO: This content is scrolling with the page.  Should stay fixed at the top.-->
@@ -56,7 +56,7 @@
                     <li><a href="#plugins-task">Task Tools</a></li>
                     <li><a href="#plugins-strip-ui">UI Strip-Down</a></li>
                     <li><a href="#plugins-labor">Enhanced Labor Entry</a></li>
-                    <li><a href="#plugins-html-map">No Silverlight!</a></li>
+                    <li><a href="#plugins-html-map">HTML5 Map</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Coming soon...</li>
                     <li><a href="#plugins-timesheet">Timesheets</a></li>
@@ -131,15 +131,18 @@
 
     <div class="container marketing">
       
-      <!--TODO: Add some overall statement above the featurettes?
+      <!--TODO: Add some overall statement above the featurettes?-->
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider"><!--TODO: Remove?-->
+      <a name="services"></a><hr class="featurette-divider">
 
-      <div class="row featurette"><a name="services"></a>
+      <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Expert Consulting. <span class="text-muted">Get it right the first time.</span></h2>
+          <h2 class="featurette-heading">
+            Expert Consulting<br>
+            <small class="text-muted">Get it right the first time</small>
+          </h2>
           <p class="lead">Our diverse team doesn't just understand technology.  We understand the business of local government and utilities.  So you can spend less time explaining and more time getting things done.</p>
         </div>
         <div class="col-md-5">
@@ -147,33 +150,47 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
-      
-      <!--TODO: Add mobile featurette?-->
+      <a name="mobile"></a><hr class="featurette-divider">
 
-      <div class="row featurette"><a name="hosting"></a>
+      <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Managed Deployments. <span class="text-muted">Let us handle the heavy lifting.</span></h2>
-          <p class="lead">Whether your want your data in your own cloud, the Cityworks cloud, the ArcGIS cloud, or no cloud at all, let EEC manage the transition, security, and maintenance and be certain your data is safe and your servers are running.</p>
+          <h2 class="featurette-heading">
+            Go Mobile<br>
+            <small class="text-muted">Without going insane</small>
+          </h2>
+          <p class="lead">Get out to the field...</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <a name="hosting"></a><hr class="featurette-divider">
 
-      <div class="row featurette"><a name="plugins"></a>
+      <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Cityworks Plugins. <span class="text-muted">Plug and Play.</span></h2>
-          <p class="lead">Don't settle for just getting <em>close</em> to your needs.  Make Cityworks your own with our affordable packaged plugins.  Have an idea for a new plugin?  Let us build it on the cheap!</p>
+          <h2 class="featurette-heading">
+            Managed Deployments<br>
+            <small class="text-muted">Let us handle the heavy lifting</small>
+          </h2>
+          <p class="lead">Whether your want your data in your own cloud, the Cityworks cloud, the ArcGIS cloud, or no cloud at all, let EEC manage the transition, security, and maintenance and be certain your data is safe and your servers are running.</p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
 
-      <!--<hr class="featurette-divider">-->
+      <a name="plugins"></a><hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">
+            Cityworks Plugins<br>
+            <small class="text-muted">Just plug and play.  No XML coding required.</small>
+          </h2>
+          <p class="lead">Don't settle for just getting <em>close</em> to your needs.  Make Cityworks your own with our affordable packaged plugins.  Check out our gallery below.  Have an idea for something you don't see below?  Let us build it on the cheap!</p>
+        </div>
+      </div>
 
       <!-- /END THE FEATURETTES -->
       
@@ -181,7 +198,7 @@
       <div class="row">
         
         <div class="col-lg-4"><a name="plugins-qa"></a>
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="http://eecworld.github.io/cityworks-qa/images/cw-qa-wo-screenshot.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Quality Assurance</h2>
           <p>Save time by running checks on your work orders and service requests as data is entered (not just when closing).  Best of all, it's open source and completely free!</p>
           <p><a class="btn btn-default" href="#" role="button">More information &raquo;</a><a class="btn btn-default" href="http://eecworld.github.io/cityworks-qa/" role="button">Get it on GitHub &raquo;</a></p>
@@ -198,6 +215,65 @@
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Task Tools</h2>
           <p>Using tasks in Cityworks can be a click-intensive endeavor.  With tools like "Mark All Tasks Complete" and one-click check-offs, the Task Tools plugin makes using tasks as easy as checking off your grocery list.</p>
+          <p><a class="btn btn-default" href="#" role="button">More information &raquo;</a></p>
+        </div>
+
+      </div><!-- /.row -->
+
+      <div class="row">
+
+        <div class="col-lg-4"><a name="plugins-strip-ui"></a>
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>UI Strip-Down</h2>
+          <p>Take control of your user interface with the UI Strip-Down plugin.  Completely change the look and feel of any page with just a few configuration tweaks.  No XML required!</p>
+          <p><a class="btn btn-default" href="#" role="button">More information &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4"><a name="plugins-labor"></a>
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Enhanced Labor Entry</h2>
+          <p>Do you need more flexibility over your labor entry than what ELM provides out of the box?  This plugin gives complete control and makes data entry a breeze.</p>
+          <p><a class="btn btn-default" href="#" role="button">More information &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4"><a name="plugins-html-map"></a>
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>HTML5 Map</h2>
+          <p>Silverlight starting to annoy you?  Replace the Silverlight map with the new Cityworks HTML5 map today with this quick plugin.</p>
+          <p><a class="btn btn-default" href="#" role="button">More information &raquo;</a></p>
+        </div>
+
+      </div><!-- /.row -->
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Coming soon...</h2>
+          <p>Here's some of the plugins that are currently in the works.  See something you like?  Let us know so we can be sure to incorporate your needs in our development!</p>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4"><a name="plugins-timesheet"></a>
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Timesheets</h2>
+          <p>Labor entry review is made much easier with this timesheet module.  View and edit all the labor entries for an employee's work week in one central location.</p>
+          <p><a class="btn btn-default" href="#" role="button">More information &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4"><a name="plugins-scheduling"></a>
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Scheduling</h2>
+          <p>Go beyond just cycling work orders and make scheduling preventative maintenance easy and strategic.  This plugin prioritizes assets by when they were last worked on so you can geographically distribute PM work orders.</p>
+          <p><a class="btn btn-default" href="#" role="button">More information &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4"><a name="plugins-timer"></a>
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Labor Timer</h2>
+          <p>Start and stop a simple timer right on your work order screen to log your labor (and your crew's) in real-time.</p>
           <p><a class="btn btn-default" href="#" role="button">More information &raquo;</a></p>
         </div>
         

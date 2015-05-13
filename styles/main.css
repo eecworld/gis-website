@@ -5,6 +5,9 @@ nav.navbar-default.navbar-fixed-top {
   display: inline-block;
 }
 a.navbar-brand {
-  padding: 4px;
+  padding: 6px;
   color: black !important;
+}
+#cityworks-logo {
+  margin-top: 5px;
 }
