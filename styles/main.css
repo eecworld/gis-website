@@ -11,3 +11,29 @@ a.navbar-brand {
 #cityworks-logo {
   margin-top: 5px;
 }
+
+/*Sticky footer*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 44px;
+  background-color: white;
+  border-top: 1px solid #eee;
+  padding-top: 5px;
+}
+@media (max-width: 767px) {
+  footer .container {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
