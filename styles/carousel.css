@@ -158,3 +158,6 @@ body {
     right: 0;
     background: radial-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0));
 }
+.carousel strong {
+    color: rgb(234, 234, 52);
+}
