@@ -37,3 +37,12 @@ footer {
     padding-right: 3px;
   }
 }
+.fob {
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #333;
+  margin-bottom: 20px;
+}
+.pad-after {
+  margin-bottom: 20px;
+}
