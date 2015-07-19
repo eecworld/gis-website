@@ -52,3 +52,6 @@ footer {
 .navbar-default { 
   background-color: white;
 }
+.img-app {
+  border-radius: 15%;
+}
