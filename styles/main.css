@@ -3,13 +3,16 @@ nav.navbar-default.navbar-fixed-top {
 }
 .navbar-brand img {
   display: inline-block;
+  vertical-align: middle;
 }
 a.navbar-brand {
   padding: 6px;
-  color: black !important;
+  color: #333 !important;
 }
-#cityworks-logo {
-  margin-top: 5px;
+.navbar-brand h1 {
+  vertical-align: middle;
+  display: inline;
+  font-size: 30px;
 }
 
 /*Sticky footer*/
